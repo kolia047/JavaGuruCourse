@@ -25,6 +25,10 @@ class BankAccount {
         return this.money;
     }
 
+    public void setMoney(int money){
+        this.money = money;
+    }
+
     @Override
     public String toString() {
         return "Владелец - " + this.owner + " \n"

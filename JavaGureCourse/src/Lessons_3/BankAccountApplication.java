@@ -11,7 +11,8 @@ public class BankAccountApplication {
 
         System.out.println(bankAccount2.getOwner());
         System.out.println(bankAccount1.getMoney());
-        System.out.println(bankAccount3.getOwner());
+        bankAccount2.setMoney(750);
+        System.out.println(bankAccount2);
 
 
         System.out.println(bankAccount);
