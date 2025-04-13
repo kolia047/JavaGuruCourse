@@ -1,5 +1,7 @@
 package Lessons_3;
 
+import java.util.Scanner;
+
 public class BankAccountApplication {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Vasia", 50);
@@ -11,5 +13,15 @@ public class BankAccountApplication {
         System.out.println(bankAccount1);
         System.out.println(bankAccount2);
         System.out.println(bankAccount3);
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Your Name");
+        String name = scanner.nextLine();
+        System.out.println("Your mony");
+        int money = scanner.nextInt();
+        BankAccount bankAccount4 = new BankAccount(name, money);
+        System.out.println(bankAccount4);
+
     }
 }
