@@ -13,6 +13,8 @@ public class BankAccountApplication {
         System.out.println(bankAccount1.getMoney());
         bankAccount2.setMoney(750);
         System.out.println(bankAccount2);
+        bankAccount2.addMoney(450);
+        System.out.println(bankAccount2);
 
 
         System.out.println(bankAccount);
