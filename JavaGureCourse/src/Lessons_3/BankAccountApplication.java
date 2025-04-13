@@ -9,6 +9,10 @@ public class BankAccountApplication {
         BankAccount bankAccount2 = new BankAccount("tania");
         BankAccount bankAccount3 = new BankAccount();
 
+        System.out.println(bankAccount2.getOwner());
+        System.out.println(bankAccount1.getMoney());
+        System.out.println(bankAccount3.getOwner());
+
         System.out.println(bankAccount);
         System.out.println(bankAccount1);
         System.out.println(bankAccount2);

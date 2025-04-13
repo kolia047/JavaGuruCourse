@@ -9,11 +9,19 @@ class BankAccount {
         this.money = money;
     }
 
-    BankAccount() {
+    public BankAccount() {
     }
 
     public BankAccount(String owner) {
         this.owner = owner;
+    }
+
+    public String getOwner() {
+        return this.owner;
+    }
+
+    public int getMoney() {
+        return this.money;
     }
 
     @Override
