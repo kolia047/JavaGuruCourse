@@ -14,6 +14,7 @@ class BankAccount {
 
     public BankAccount(String owner) {
         this.owner = owner;
+
     }
 
     public String getOwner() {

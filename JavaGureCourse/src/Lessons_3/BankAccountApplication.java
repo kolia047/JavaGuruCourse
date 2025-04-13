@@ -13,6 +13,7 @@ public class BankAccountApplication {
         System.out.println(bankAccount1.getMoney());
         System.out.println(bankAccount3.getOwner());
 
+
         System.out.println(bankAccount);
         System.out.println(bankAccount1);
         System.out.println(bankAccount2);
