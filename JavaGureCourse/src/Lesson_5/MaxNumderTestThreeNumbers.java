@@ -6,6 +6,8 @@ public class MaxNumderTestThreeNumbers {
         maxNumderTestThreeNumbers.test1();
         maxNumderTestThreeNumbers.test2();
         maxNumderTestThreeNumbers.test3();
+        maxNumderTestThreeNumbers.test4();
+        maxNumderTestThreeNumbers.test5();
     }
 
 
@@ -37,6 +39,26 @@ public class MaxNumderTestThreeNumbers {
             System.out.println("Test 3 = OK");
         } else {
             System.err.println("est 3 = FAIL");
+        }
+    }
+
+    public void test4() {
+        MaxNumber maxNumber = new MaxNumber();
+        int result = maxNumber.findMaxThreeNumbers(5, 5, 5);
+        if (result == 5) {
+            System.out.println("Test 4 = OK");
+        } else {
+            System.err.println("est 4 = FAIL");
+        }
+    }
+
+    public void test5() {
+        MaxNumber maxNumber = new MaxNumber();
+        int result = maxNumber.findMaxThreeNumbers(1, 5, 5);
+        if (result == 5) {
+            System.out.println("Test 5 = OK");
+        } else {
+            System.err.println("est 5 = FAIL");
         }
     }
 }
