@@ -9,8 +9,8 @@ public class Calculator {
     int findAverage(int number1, int number2) {
         return (number1 + number2) / 2;
     }
-
     int maxNumber(int number1, int number2) {
         return Math.max(number1, number2);
     }
+
 }
