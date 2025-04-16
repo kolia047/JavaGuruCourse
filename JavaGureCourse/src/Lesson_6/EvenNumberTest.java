@@ -14,35 +14,33 @@ public class EvenNumberTest {
     public void test1() {
         //2->true
         EvenNumber evenNumber = new EvenNumber();
+        boolean bb = evenNumber.isEven(2);
 
-        if (evenNumber.isEven(2) == true) {
-            System.out.println("Test 1 = OK");
-        } else {
-            System.out.println("Test 1 = FAIL");
-        }
+        checkResult(bb, "1");
     }
-//3->false
+
+    //3->false
     public void test2() {
 
         EvenNumber evenNumber = new EvenNumber();
+        boolean bb = evenNumber.isEven(3);
+        checkResult(bb, "2");
 
-        if (evenNumber.isEven(3) == false) {
-            System.out.println("Test 2 = OK");
-        } else {
-            System.out.println("Test 2 = FAIL");
-        }
     }
-
 
     //-1->false
     public void test3() {
 
         EvenNumber evenNumber = new EvenNumber();
+        boolean bb = evenNumber.isEven(-1);
+       checkResult(bb, "3");
+    }
 
-        if (evenNumber.isEven(-1) == false) {
-            System.out.println("Test 3 = OK");
+    private void checkResult(boolean a, String nameTest) {
+        if (a == true) {
+            System.out.println("Test " + nameTest + " = OK chetnoe");
         } else {
-            System.out.println("Test 3 = FAIL");
+            System.out.println("Test " + nameTest + " = Ne chetnoe");
         }
     }
 }
