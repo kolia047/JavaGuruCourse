@@ -6,9 +6,10 @@ import java.util.List;
 class BusinessLogic {
     private Dairy dairy;
 
-    public BusinessLogic(Dairy dairy) {
+    public BusinessLogic() {
         this.dairy = new Dairy();
     }
+
 
     public void addMark(String subject, int mark) {
         Mark newMark = new Mark(subject, mark);
@@ -37,5 +38,9 @@ class BusinessLogic {
             }
         }
         return bestMark;
+    }
+
+    public List<Mark> getAllMarks(){
+        return dairy.getMarks();
     }
 }
